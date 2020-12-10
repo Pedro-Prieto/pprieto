@@ -1,2 +1,1 @@
-# pprieto
-personal
+# pprieto.com
