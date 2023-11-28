@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(56860261, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/56860261" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-  <title>Pedro Prieto</title>
-  <link rel ="icon" type="image/png" href="favicon.png"></link>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Análisis de datos">
-  <meta name="keywords" content="Marketing, Datos, Web, Geo, Informática">
-  <meta name="author" content="Pedro Prieto">
-  <link rel="stylesheet" href="assets/css/main.css">
+        ym(56860261, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/56860261" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <title>Pedro Prieto</title>
+    <link rel="icon" type="image/png" href="favicon.png"></link>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Análisis de datos">
+    <meta name="keywords" content="Marketing, Datos, Web, Geo, Informática">
+    <meta name="author" content="Pedro Prieto">
+    <link rel="stylesheet" href="assets/css/main.css">
 
-<!---->
-<script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" ></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!---->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <!--script src= "assets/js/pixi.min.js"></script-->
-  <script src= "assets/js/d3.min.js" ></script>
-  <script src= "assets/js/paper-full.js" ></script>
+    <!--script src= "assets/js/pixi.min.js"></script-->
+    <script src="assets/js/d3.min.js"></script>
+    <script src="assets/js/paper-full.js"></script>
 
-  <!--script type="text/javascript" src="assets/js/paper-full.js"></script-->
+    <!--script type="text/javascript" src="assets/js/paper-full.js"></script-->
 
-  
+
 
 </head>
 
 
-<body> <!--style= "overflow: hidden;"-->
-  
-  
-  <!--script type="text/paperscript" canvas="canvasid">
+<body>
+    <!--style= "overflow: hidden;"-->
+
+
+    <!--script type="text/paperscript" canvas="canvasid">
     // The amount of symbol we want to place;
     var count = 150;
 
@@ -119,59 +126,61 @@
     }
   </script>
   <canvas id="canvasid" resize style="position: absolute; background:none; overflow: hidden;"  resize hidpi="off" ></canvas-->
-  
-  
-<!-- notification for small viewports and landscape oriented smartphones -->
-<div class="device-notification">
-  <a class="device-notification--logo" href="#0">
-    <!--p></p-->
-    <img src="assets/img/logo.png" alt="Pedro Prieto">
-    
-  </a>
-  <p class="device-notification--message">Bienvenido, estamos escribiendo oportunidades. </br><i>Te recomiendo usar una PC.</i></p>
-</div>
 
-<div class="perspective effect-rotate-left">
-  <div class="container"><div class="outer-nav--return"></div>
-    <div id="viewport" class="l-viewport">
 
-      <div class="l-wrapper">
-
-        <header class="header">  
-
-          <!--p>PPrieto</p--> 
-          <a class="header--logo" href="index.html">
-            <pre>PPrieto</pre>
+    <!-- notification for small viewports and landscape oriented smartphones -->
+    <div class="device-notification">
+        <a class="device-notification--logo" href="#0">
+            <!--p></p-->
             <img src="assets/img/logo.png" alt="Pedro Prieto">
-          </a>
-          <button class="header--cta cta" style="position:relative; top:20%; left:43%;">Sobre mi</button>
-          <div class="header--nav-toggle">
-            <span></span>
-          </div>
-        </header>
-        
 
-        <nav class="l-side-nav">
-          
-          <ul class="side-nav">
-            
-            <li class="is-active"><span>Inicio</span></li>
-            <li><span>Ámbitos</span></li>
-            <li><span>Acerca</span></li>
-            <li><span>Contacto</span></li>
-            <li><span>Sobre mi</span></li>
-          </ul>
-        </nav>
-        
-        <ul class="l-main-content main-content">
-          <li class="l-section section section--is-active">
-            <div class="intro">
-              <div class="intro--banner">
-                
-                <!--iframe-->
-                <iframe id=iframeinfo style="width: 100%; height: 90%; display: none; border:none" title="Ejemplos" src="" ></iframe> <!--visibility: hidden; overflow: hidden; allowfullscreen="" scrolling="no"-->
-                <h1 class="cabeceraprin" id=tituloNCD>Nuevo<br>concepto<br>de datos</h1>
-                <!--button id=masInfo class="cta">Más información
+        </a>
+        <p class="device-notification--message">Bienvenido, estamos escribiendo oportunidades. </br><i>Te recomiendo usar una computadora.</i></p>
+    </div>
+
+    <div class="perspective effect-rotate-left">
+        <div class="container">
+            <div class="outer-nav--return"></div>
+            <div id="viewport" class="l-viewport">
+
+                <div class="l-wrapper">
+
+                    <header class="header">
+
+                        <!--p>PPrieto</p-->
+                        <a class="header--logo" href="index.html">
+                            <pre>PPrieto</pre>
+                            <img src="assets/img/logo.png" alt="Pedro Prieto">
+                        </a>
+                        <button class="header--cta cta" style="position:relative; top:20%; left:43%;">Sobre mi</button>
+                        <div class="header--nav-toggle">
+                            <span></span>
+                        </div>
+                    </header>
+
+
+                    <nav class="l-side-nav">
+
+                        <ul class="side-nav">
+
+                            <li class="is-active"><span>Inicio</span></li>
+                            <li><span>Ámbitos</span></li>
+                            <li><span>Acerca</span></li>
+                            <li><span>Contacto</span></li>
+                            <li><span>Sobre mi</span></li>
+                        </ul>
+                    </nav>
+
+                    <ul class="l-main-content main-content">
+                        <li class="l-section section section--is-active">
+                            <div class="intro">
+                                <div class="intro--banner">
+
+                                    <!--iframe-->
+                                    <iframe id=iframeinfo style="width: 100%; height: 90%; display: none; border:none" title="Ejemplos" src=""></iframe>
+                                    <!--visibility: hidden; overflow: hidden; allowfullscreen="" scrolling="no"-->
+                                    <h1 class="cabeceraprin" id=tituloNCD>Nuevo<br>concepto<br>de datos</h1>
+                                    <!--button id=masInfo class="cta">Más información
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                   <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
                     <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
@@ -179,30 +188,30 @@
                   </svg>
                   <span class="btn-background"></span>
                 </button-->
-                <img id="astronauta" src="assets/img/introduction-visual.png">
-              </div>
-              <div class="intro--options">
+                                    <img id="astronauta" src="assets/img/introduction-visual.png">
+                                </div>
+                                <div class="intro--options">
 
-              <script>
-                let cabecera = d3.select("#tituloNCD")
-                console.log(cabecera.node())
-                let h1s = d3.selectAll("h1")
-                console.log(h1s.node())
-                let cabeceran1 = d3.select(".cabeceraprin")
-                console.log(cabeceran1.nodes())
-                //<cabecera.text("")>
-                //otras formas
-                d3.select("#masInfo")
+                                    <script>
+                                        let cabecera = d3.select("#tituloNCD")
+                                        console.log(cabecera.node())
+                                        let h1s = d3.selectAll("h1")
+                                        console.log(h1s.node())
+                                        let cabeceran1 = d3.select(".cabeceraprin")
+                                        console.log(cabeceran1.nodes())
+                                            //<cabecera.text("")>
+                                            //otras formas
+                                        d3.select("#masInfo")
 
 
-                let mouseCursor = document.querySelector(".cursor");
-                let navLinks = document.querySelectorAll(".nav-links li")
+                                        let mouseCursor = document.querySelector(".cursor");
+                                        let navLinks = document.querySelectorAll(".nav-links li")
 
-                // falta conseguir el .cursor y el nav-links relativo en la pagina en side-nav
-              </script>
-              
-                <div class="col-lg-6 col-sm-12 col-md-12 form-card">
-                  <button onclick="geo()" class="col-lg-6 col-sm-12 col-md-12 form-card">
+                                        // falta conseguir el .cursor y el nav-links relativo en la pagina en side-nav
+                                    </script>
+
+                                    <div class="col-lg-6 col-sm-12 col-md-12 form-card">
+                                        <button onclick="geo()" class="col-lg-6 col-sm-12 col-md-12 form-card">
                   <!--a href="geo/index.html"-->
                     <h3 style= "background-color: #9007f9;">Geo</h3>
                     <p id="pgeo" style= "color: #551a8b; flex-grow:1;">60% de las oportunidades son geográficas.</p>
@@ -228,13 +237,13 @@
                     }
                   </script>
                   </button>
-                </div>
+                                    </div>
 
 
 
-                <div class="col-lg-6 col-sm-12 col-md-12 form-card">
+                                    <div class="col-lg-6 col-sm-12 col-md-12 form-card">
 
-                <button onclick="webmkt()" class="col-lg-6 col-sm-12 col-md-12 form-card">
+                                        <button onclick="webmkt()" class="col-lg-6 col-sm-12 col-md-12 form-card">
                   
                 <!--a href="#0"-->
                   <h3 style= "background-color: #9007f9;">Datos &amp; Marketing</h3>
@@ -260,112 +269,111 @@
                   }
                 </script>
                 </button>
-              </div>
+                                    </div>
 
-              <div class="col-lg-6 col-sm-12 col-md-12 form-card">
+                                    <div class="col-lg-6 col-sm-12 col-md-12 form-card">
 
-                <button onclick="infoWeb()">
+                                        <button onclick="infoWeb()">
                 <!--a href="DASHBOARD/index.html"-->
                   <h3 style= "background-color: #9007f9;">Web</h3>
                   <p id="pinfoWeb" style= "color: #551a8b; flex-grow:1;">100% páginas dinámicas, en código y económicas. &#127776;</p>
                 <!--/a-->
                 </button>
-              </div>
-              <script>
-                function infoWeb() {
-                  d3.select("#tituloNCD")
-                    .text("")
-                  d3.select("#masInfo")
-                    .text("")
-                  d3.select("#astronauta")
-                    .attr("src", "")
-                  d3.select("#iframeinfo")
-                    .attr("src", "webm/index.html")
-                    .style("display", "flex")
+                                    </div>
+                                    <script>
+                                        function infoWeb() {
+                                            d3.select("#tituloNCD")
+                                                .text("")
+                                            d3.select("#masInfo")
+                                                .text("")
+                                            d3.select("#astronauta")
+                                                .attr("src", "")
+                                            d3.select("#iframeinfo")
+                                                .attr("src", "webm/index.html")
+                                                .style("display", "flex")
 
-                  d3.select("#pinfoWeb")
-                    .text("Desarrollo fullstack con JavaScript o Wordpress.")
-                    .style("color", "#ffffff")
-                  d3.select("#pinfoWeb").transition().style("color","rgb(128,128,128)").duration(1000);
-                  //d3.select
-                  //#ffffff #9007f9 #0c0c0c #551a8b
-                    //"; overflow: hidden; border:none")
-                }
-              </script>
-              </div>
-
-
-              <p id="flecha" style="color: #282828;">▼</p>
+                                            d3.select("#pinfoWeb")
+                                                .text("Desarrollo fullstack con JavaScript o Wordpress.")
+                                                .style("color", "#ffffff")
+                                            d3.select("#pinfoWeb").transition().style("color", "rgb(128,128,128)").duration(1000);
+                                            //d3.select
+                                            //#ffffff #9007f9 #0c0c0c #551a8b
+                                            //"; overflow: hidden; border:none")
+                                        }
+                                    </script>
+                                </div>
 
 
-
-        </div>
-          </li>
+                                <p id="flecha" style="color: #282828;">▼</p>
 
 
-          <li class="l-section section">
-            <div class="work">
-              <h2>Ámbitos</h2>
-              <div class="work--lockup">
-                <ul class="slider">
-                  <li class="slider--item slider--item-left">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/geo.jpg" alt="Victory">
-                      </div>
-                      <p class="slider--item-title">Geo</p>
-                      <p class="slider--item-description">Dimensionar información de todo tipo, con contenido intuitivo y oportuno para la toma de desiciones sobre distribución en general (ruteros, tiendas online, reuniones de directorios, etc.).</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-center">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/mktydata.jpg" alt="Análisis de mercado">
-                      </div>
-                      <p class="slider--item-title">Datos &amp; Marketing</p>
-                      <p class="slider--item-description">Generar una estrategia basada en resultados, realista y que permita un crecimiento sobre los indicadores.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-right">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/web.jpg" alt="1az">
-                      </div>
-                      <p class="slider--item-title">Web</p>
-                      <p class="slider--item-description">Visibilizar la oferta de productos u servicios para usuarios y consumidores de manera dinámica, enfocado en sus necesidades informativas.</p>
-                    </a>
-                  </li>
-                </ul>
-                <div class="slider--prev">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+
+                            </div>
+                        </li>
+
+
+                        <li class="l-section section">
+                            <div class="work">
+                                <h2>Ámbitos</h2>
+                                <div class="work--lockup">
+                                    <ul class="slider">
+                                        <li class="slider--item slider--item-left">
+                                            <a href="#0">
+                                                <div class="slider--item-image">
+                                                    <img src="assets/img/geo.jpg" alt="Victory">
+                                                </div>
+                                                <p class="slider--item-title">Geo</p>
+                                                <p class="slider--item-description">Dimensionar información de todo tipo, con contenido intuitivo y oportuno para la toma de desiciones sobre distribución en general (ruteros, tiendas online, reuniones de directorios, etc.).</p>
+                                            </a>
+                                        </li>
+                                        <li class="slider--item slider--item-center">
+                                            <a href="#0">
+                                                <div class="slider--item-image">
+                                                    <img src="assets/img/mktydata.jpg" alt="Análisis de mercado">
+                                                </div>
+                                                <p class="slider--item-title">Datos &amp; Marketing</p>
+                                                <p class="slider--item-description">Generar una estrategia basada en resultados, realista y que permita un crecimiento sobre los indicadores.</p>
+                                            </a>
+                                        </li>
+                                        <li class="slider--item slider--item-right">
+                                            <a href="#0">
+                                                <div class="slider--item-image">
+                                                    <img src="assets/img/web.jpg" alt="1az">
+                                                </div>
+                                                <p class="slider--item-title">Web</p>
+                                                <p class="slider--item-description">Visibilizar la oferta de productos u servicios para usuarios y consumidores de manera dinámica, enfocado en sus necesidades informativas.</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="slider--prev">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                   <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
                     <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
                     c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
                     c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
                   </g>
                   </svg>
-                </div>
-                <div class="slider--next">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                                    </div>
+                                    <div class="slider--next">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                   <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
                     <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
                   </g>
                   </svg>
-                </div>
-              </div>
-              <p id="flecha" style="color: #282828;">▼</p>
-            </div>
-          </li>
+                                    </div>
+                                </div>
+                                <p id="flecha" style="color: #282828;">▼</p>
+                            </div>
+                        </li>
 
-          <li class="l-section section">
-            <div class="about">
-              <div class="about--banner">
-                <h2 id=todoxcuanti><br>Todo<br>por<br>cuantificar</h2>
-                <p id=infogeo style = "text-align: justify;"></p>
-                <p id=infomkt style = "text-align: justify;"></p>
-                <p id=infoweb style = "text-align: justify;"></p>
-                <!--a href="#formulario">Más
+                        <li class="l-section section">
+                            <div class="about">
+                                <div class="about--banner">
+                                    <h2 id=todoxcuanti><br>Todo<br>por<br>cuantificar</h2>
+                                    <p id=infogeo style="text-align: justify;"></p>
+                                    <p id=infomkt style="text-align: justify;"></p>
+                                    <p id=infoweb style="text-align: justify;"></p>
+                                    <!--a href="#formulario">Más
                   <span>
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                     <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
@@ -374,12 +382,12 @@
                     </svg>
                   </span>
                 </a-->
-                <!--img src="assets/img/about-visual.png" alt="Acerca de mi"-->
-              </div>
-              <div class="about--options">
+                                    <!--img src="assets/img/about-visual.png" alt="Acerca de mi"-->
+                                </div>
+                                <div class="about--options">
 
-                <a>
-                <button onclick="infogeo()" style="border: none; color: transparent; background: none!important;">
+                                    <a>
+                                        <button onclick="infogeo()" style="border: none; color: transparent; background: none!important;">
                   <!--a href="geo/index.html"-->
                     <h3 style= "background-color: #FFFF05;"><pre id=titulosinfogeo style= "color: #0c0c0c; flex-grow:1;"><b> Geo </b></pre></h3>
                   <!--/a-->
@@ -394,11 +402,11 @@
                         .style("color","#0029FA")
                     }
                   </script>
-                  </button>                
-                </a>
-                  
-                <a>
-                  <button onclick="infomkt()" style="border: none; color: transparent; background: none!important;">
+                  </button>
+                                    </a>
+
+                                    <a>
+                                        <button onclick="infomkt()" style="border: none; color: transparent; background: none!important;">
                       <h3 style= "background-color: #FFFF05;"><pre id=titulosinfomkt style= "color: #0c0c0c; flex-grow:1;"><b> Marketing &amp; Datos </b></pre></h3>
                     <script>
                       function infomkt() {
@@ -411,11 +419,11 @@
                         .style("color","#0029FA")
                       }
                     </script>
-                    </button>                
-                  </a>
+                    </button>
+                                    </a>
 
-                <a>
-                <button onclick="infoweb()" style="border: none; color: transparent; background: none!important;">
+                                    <a>
+                                        <button onclick="infoweb()" style="border: none; color: transparent; background: none!important;">
                     <h3 style= "background-color: #FFFF05;"><pre id=titulosinfoweb style= "color: #0c0c0c; flex-grow:1;"><b> Web </b></pre></h3>
                   <script>
                     function infoweb() {
@@ -428,68 +436,68 @@
                         .style("color","#0029FA")
                     }
                   </script>
-                  </button>                
-                </a>
+                  </button>
+                                    </a>
 
-              </div>
-              <p id="flecha" style="color: #282828;">▼</p>
-            </div>
-          </li>
+                                </div>
+                                <p id="flecha" style="color: #282828;">▼</p>
+                            </div>
+                        </li>
 
-          <li class="l-section section">
-            <div class="contact">
-              <div class="contact--lockup">
-                <div class="modal">
-                  <div class="modal--information">
-                    <p>Padre Aguirre 14-31 y Pio Bravo, Cuenca - Ecuador</p>
-                    <a href="mailto:pedro@pprieto.com">pedro@pprieto.com</a>
-                    <a href="tel:+593998072112">09 980 72 112</a>
-                  </div>
-                  <ul class="modal--options">
-                    <li><a href="https://www.facebook.com/PPRIETO-106586587504561">facebook</a></li>
-                    <li><a href="mailto:pedro@pprieto.com">Escribir</a></li>
-                  </ul>
-                </div>
-              </div>
+                        <li class="l-section section">
+                            <div class="contact">
+                                <div class="contact--lockup">
+                                    <div class="modal">
+                                        <div class="modal--information">
+                                            <p>Padre Aguirre 14-31 y Pio Bravo, Cuenca - Ecuador</p>
+                                            <a href="mailto:pedro@pprieto.com">pedro@pprieto.com</a>
+                                            <a href="tel:+593998072112">09 980 72 112</a>
+                                        </div>
+                                        <ul class="modal--options">
+                                            <li><a href="https://www.facebook.com/PPRIETO-106586587504561">facebook</a></li>
+                                            <li><a href="mailto:pedro@pprieto.com">Escribir</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="hire">
-              <!-- checkout formspree.io for easy form setup -->
-              <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-              <script type="text/javascript">
-              $(document).ready(function(){
-                $('#newsletter').submit(function(e) {
-                  e.preventDefault();
-                  let form = $(this);
-                  $.ajax({
-                    type: 'post',
-                    dataType: 'json',
-                    url: form.attr('action'),
-                    data: {
-                      email: {
-                        nombre: $('#nombre').val(),
-                        email: $('#email').val(),
-                        interes: $('#interes').val()
-                      } 
-                    },
-                    success: function() {
-                      $('#newsletter-success').show();
-                      $('#newsletter').hide();
-                    },
-                    error: function(xhr, res, text) {
-                      alert(text);
-                    }
-                  });
-                });
-              });
-              </script>
-              
-<body>
-  <h2></h2>
-  <div class="container" align="center"> <embed src="CV_PEDRO_PRIETO.pdf" type="application/pdf" width="100%" height="100%" />
-    <!--br>
+                            </div>
+                        </li>
+                        <li class="l-section section">
+                            <div class="hire">
+                                <!-- checkout formspree.io for easy form setup -->
+                                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                                <script type="text/javascript">
+                                    $(document).ready(function() {
+                                        $('#newsletter').submit(function(e) {
+                                            e.preventDefault();
+                                            let form = $(this);
+                                            $.ajax({
+                                                type: 'post',
+                                                dataType: 'json',
+                                                url: form.attr('action'),
+                                                data: {
+                                                    email: {
+                                                        nombre: $('#nombre').val(),
+                                                        email: $('#email').val(),
+                                                        interes: $('#interes').val()
+                                                    }
+                                                },
+                                                success: function() {
+                                                    $('#newsletter-success').show();
+                                                    $('#newsletter').hide();
+                                                },
+                                                error: function(xhr, res, text) {
+                                                    alert(text);
+                                                }
+                                            });
+                                        });
+                                    });
+                                </script>
+
+                                <body>
+                                    <h2></h2>
+                                    <div class="container" align="center"> <embed src="CV_PEDRO_PRIETO.pdf" type="application/pdf" width="100%" height="100%" />
+                                        <!--br>
     <br>
     <h2>Registra tus datos!</h2>
     </br>
@@ -502,29 +510,33 @@
     <div id="newsletter-success" style="display: none;">
       Recibido! pronto estaremos en contacto!
     </div-->
-    
-  </div>
+
+                                    </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </li>
+        </div>
+        <ul class="outer-nav">
+            <li class="is-active">01. Inicio</li>
+            <li>02. Ámbitos</li>
+            <li>03. Acerca</li>
+            <li>04. Contacto</li>
+            <!--li>Sobre mi</li-->
         </ul>
-      </div>
+
     </div>
-  </div>
-  <ul class="outer-nav">
-    <li class="is-active">01. Inicio</li>
-    <li>02. Ámbitos</li>
-    <li>03. Acerca</li>
-    <li>04. Contacto</li>
-    <!--li>Sobre mi</li-->
-  </ul>
-  
-</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-<script src="assets/js/functions-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')
+    </script>
+    <script src="assets/js/functions-min.js"></script>
 
-</body>
+    </body>
+
 </html>
 </body>
+
 </html>
