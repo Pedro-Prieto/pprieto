@@ -48,87 +48,7 @@
 
 
 <body>
-    <!--style= "overflow: hidden;"-->
 
-
-    <!--script type="text/paperscript" canvas="canvasid">
-    // The amount of symbol we want to place;
-    var count = 150;
-
-    // Create a symbol, which we will use to place instances of later:
-    var path = new Path.Circle({
-        center: new Point(0, 0),
-        radius: 5,
-        fillColor: 'white',
-        strokeColor: 'black'
-    });
-
-    var symbol = new SymbolDefinition(path);
-
-    // Place the instances of the symbol:
-    for (var i = 0; i < count; i++) {
-        // The center position is a random point in the view:
-        var center = Point.random() * view.size;
-        var placed = symbol.place(center);
-        var scale = (i + 1) / count;
-        placed.scale(scale);
-        placed.data.vector = new Point({
-            angle: Math.random() * 360,
-            length : scale * Math.random() / 5
-        });
-    }
-
-    var vector = new Point({
-        angle: 45,
-        length: 0
-    });
-
-    var mouseVector = vector.clone();
-
-    function onMouseMove(event) {
-        mouseVector = view.center - event.point;
-    }
-
-    // The onFrame function is called up to 60 times a second:
-    function onFrame(event) {
-        vector = vector + (mouseVector - vector) / 30;
-
-        // Run through the active layer's children list and change
-        // the position of the placed symbols:
-        for (var i = 0; i < count; i++) {
-            var item = project.activeLayer.children[i];
-            var size = item.bounds.size;
-            var length = vector.length / 10 * size.width / 10;
-            item.position += vector.normalize(length) + item.data.vector;
-            keepInView(item);
-        }
-    }
-
-    function keepInView(item) {
-        var position = item.position;
-        var itemBounds = item.bounds;
-        var bounds = view.bounds;
-        if (itemBounds.left > bounds.width) {
-            position.x = -item.bounds.width;
-        }
-
-        if (position.x < -itemBounds.width) {
-            position.x = bounds.width + itemBounds.width;
-        }
-
-        if (itemBounds.top > view.size.height) {
-            position.y = -itemBounds.height;
-        }
-
-        if (position.y < -itemBounds.height) {
-            position.y = bounds.height  + itemBounds.height / 2;
-        }
-    }
-  </script>
-  <canvas id="canvasid" resize style="position: absolute; background:none; overflow: hidden;"  resize hidpi="off" ></canvas-->
-
-
-    <!-- notification for small viewports and landscape oriented smartphones -->
     <div class="device-notification">
         <a class="device-notification--logo" href="#0">
             <!--p></p-->
@@ -152,7 +72,7 @@
                             <pre>PPrieto</pre>
                             <img src="assets/img/logo.png" alt="Pedro Prieto">
                         </a>
-                        <button class="header--cta cta" style="position:relative; top:20%; left:43%;">Sobre mi</button>
+                        <button class="header--cta cta" style="position:relative; top:20%; left:43%;">En acción</button>
                         <div class="header--nav-toggle">
                             <span></span>
                         </div>
@@ -164,10 +84,10 @@
                         <ul class="side-nav">
 
                             <li class="is-active"><span>Inicio</span></li>
-                            <li><span>Ámbitos</span></li>
-                            <li><span>Acerca</span></li>
+                            <li><span>Bloc</span></li>
+                            <li><span>Galería</span></li>
                             <li><span>Contacto</span></li>
-                            <li><span>Sobre mi</span></li>
+                            <li><span>En acción</span></li>
                         </ul>
                     </nav>
 
@@ -179,15 +99,15 @@
                                     <!--iframe-->
                                     <iframe id=iframeinfo style="width: 100%; height: 90%; display: none; border:none" title="Ejemplos" src=""></iframe>
                                     <!--visibility: hidden; overflow: hidden; allowfullscreen="" scrolling="no"-->
-                                    <h1 class="cabeceraprin" id=tituloNCD>Nuevo<br>concepto<br>de datos</h1>
-                                    <!--button id=masInfo class="cta">Más información
+                                    <h1 class="cabeceraprin" id=tituloNCD>Datos en <br>Experiencias<br>Visuales.</h1>
+                                    <button id=masInfo class="cta">Más información
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                   <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
                     <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
                   </g>
                   </svg>
                   <span class="btn-background"></span>
-                </button-->
+                </button>
                                     <img id="astronauta" src="assets/img/introduction-visual.png">
                                 </div>
                                 <div class="intro--options">
@@ -213,8 +133,8 @@
                                     <div class="col-lg-6 col-sm-12 col-md-12 form-card">
                                         <button onclick="geo()" class="col-lg-6 col-sm-12 col-md-12 form-card">
                   <!--a href="geo/index.html"-->
-                    <h3 style= "background-color: #9007f9;">Geo</h3>
-                    <p id="pgeo" style= "color: #551a8b; flex-grow:1;">60% de las oportunidades son geográficas.</p>
+                    <h3 style= "background-color: #E6F4F1; color: #0E6F73;">Sobre mi</h3>
+                    <p id="pgeo" style= "color: #FF8946; flex-grow:1;">60% de las oportunidades son geográficas.</p>
                   <!--/a-->
                   <script>
                     function geo() {
@@ -232,7 +152,7 @@
                         .text("Predicciones, ventas, servicios, rutas, etc.")
                       d3.select("#pgeo").transition().style("color","rgb(128,128,128)").duration(1000);
                       //d3.select
-                      //#ffffff #9007f9 #0c0c0c #551a8b
+                      //#ffffff #9007f9 #0c0c0c #FF8946
                         //"; overflow: hidden; border:none")
                     }
                   </script>
@@ -246,8 +166,8 @@
                                         <button onclick="webmkt()" class="col-lg-6 col-sm-12 col-md-12 form-card">
                   
                 <!--a href="#0"-->
-                  <h3 style= "background-color: #9007f9;">Datos &amp; Marketing</h3>
-                  <p id="pwebmkt" style= "color: #551a8b; flex-grow:1;">80% de la información obtiene valor en el Marketing.</p>
+                  <h3 style= "background-color: #E6F4F1; color: #0E6F73;">Historias en Números</h3>
+                  <p id="pwebmkt" style= "color: #FF8946; flex-grow:1;">80% de la información obtiene valor en el Marketing.</p>
                 <!--/a-->
                 <script>
                   function webmkt() {
@@ -263,7 +183,7 @@
 
                     d3.select("#pwebmkt")
                       .style("color", "#ffffff")
-                      .text("Dashboards, estadística, IA, matrices, etc.")
+                      .text("Dashboards, estadística, IA, matrices, etc. Ver más en galería.")
 
                     d3.select("#pwebmkt").transition().style("color","rgb(128,128,128)").duration(1000);
                   }
@@ -275,8 +195,8 @@
 
                                         <button onclick="infoWeb()">
                 <!--a href="DASHBOARD/index.html"-->
-                  <h3 style= "background-color: #9007f9;">Web</h3>
-                  <p id="pinfoWeb" style= "color: #551a8b; flex-grow:1;">100% páginas dinámicas, en código y económicas. &#127776;</p>
+                  <h3 style= "background-color: #E6F4F1; color: #0E6F73;">Servicios</h3>
+                  <p id="pinfoWeb" style= "color: #FF8946; flex-grow:1;">100% páginas dinámicas, en código y económicas. &#127776;</p>
                 <!--/a-->
                 </button>
                                     </div>
@@ -297,7 +217,7 @@
                                                 .style("color", "#ffffff")
                                             d3.select("#pinfoWeb").transition().style("color", "rgb(128,128,128)").duration(1000);
                                             //d3.select
-                                            //#ffffff #9007f9 #0c0c0c #551a8b
+                                            //#ffffff #9007f9 #0c0c0c #FF8946
                                             //"; overflow: hidden; border:none")
                                         }
                                     </script>
@@ -314,7 +234,7 @@
 
                         <li class="l-section section">
                             <div class="work">
-                                <h2>Ámbitos</h2>
+                                <h2>Bloc</h2>
                                 <div class="work--lockup">
                                     <ul class="slider">
                                         <li class="slider--item slider--item-left">
@@ -347,19 +267,19 @@
                                     </ul>
                                     <div class="slider--prev">
                                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                  </g>
-                  </svg>
+                                                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                                                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                                                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                                                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                                                    </g>
+                                                    </svg>
                                     </div>
                                     <div class="slider--next">
                                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
+                                                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                                                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                                                    </g>
+                                                    </svg>
                                     </div>
                                 </div>
                                 <p id="flecha" style="color: #282828;">▼</p>
@@ -373,70 +293,57 @@
                                     <p id=infogeo style="text-align: justify;"></p>
                                     <p id=infomkt style="text-align: justify;"></p>
                                     <p id=infoweb style="text-align: justify;"></p>
-                                    <!--a href="#formulario">Más
-                  <span>
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                    </g>
-                    </svg>
-                  </span>
-                </a-->
-                                    <!--img src="assets/img/about-visual.png" alt="Acerca de mi"-->
                                 </div>
                                 <div class="about--options">
-
                                     <a>
                                         <button onclick="infogeo()" style="border: none; color: transparent; background: none!important;">
-                  <!--a href="geo/index.html"-->
-                    <h3 style= "background-color: #FFFF05;"><pre id=titulosinfogeo style= "color: #0c0c0c; flex-grow:1;"><b> Geo </b></pre></h3>
-                  <!--/a-->
-                  <script>
-                    function infogeo() {
-                      d3.select("#todoxcuanti")
-                        .text("")
-                      d3.select("#infogeo")
-                        .html("El análisis geográfico a tomado un papel crucial en el siglo XXI debido a la interconexión y la capacidad de <b style='color:#ffffff;'>geolocalización</b> lo que significa una dimensión más a todos los análisis existentes hasta ahora.")
-                      d3.select("#infogeo").transition().style("color","#FFFF05").duration(2500);
-                      d3.select("#titulosinfogeo")
-                        .style("color","#0029FA")
-                    }
-                  </script>
-                  </button>
+                                                    <h3 style= "background-color: #FFFF05;"><pre id=titulosinfogeo style= "color: #0c0c0c; flex-grow:1;"><b> Geo </b></pre></h3>
+                                                    <script>
+                                                    function infogeo() {
+                                                        d3.select("#todoxcuanti")
+                                                            .text("")
+                                                        d3.select("#infogeo")
+                                                            .html("El análisis geográfico a tomado un papel crucial en el siglo XXI debido a la interconexión y la capacidad de <b style='color:#ffffff;'>geolocalización</b> lo que significa una dimensión más a todos los análisis existentes hasta ahora.")
+                                                        d3.select("#infogeo").transition().style("color","#FFFF05").duration(2500);
+                                                        d3.select("#titulosinfogeo")
+                                                            .style("color","#0029FA")
+                                                    }
+                                                    </script>
+                                                    </button>
                                     </a>
 
                                     <a>
                                         <button onclick="infomkt()" style="border: none; color: transparent; background: none!important;">
-                      <h3 style= "background-color: #FFFF05;"><pre id=titulosinfomkt style= "color: #0c0c0c; flex-grow:1;"><b> Marketing &amp; Datos </b></pre></h3>
-                    <script>
-                      function infomkt() {
-                        d3.select("#todoxcuanti")
-                          .text("")
-                        d3.select("#infomkt")
-                          .html("El análisis de datos se presenta como una herramienta para la <b style='color:#ffffff;'>toma de desiciones</b> sin embargo la socialización puede ser en si misma un fin, como podría ser una rendicion de cuentas anual.")
-                        d3.select("#infomkt").transition().style("color","#FFFF05").duration(1800);
-                        d3.select("#titulosinfomkt")
-                        .style("color","#0029FA")
-                      }
-                    </script>
-                    </button>
+                                                    <h3 style= "background-color: #FFFF05;"><pre id=titulosinfomkt style= "color: #0c0c0c; flex-grow:1;"><b> Marketing &amp; Datos </b></pre></h3>
+                                                    <script>
+                                                    function infomkt() {
+                                                        d3.select("#todoxcuanti")
+                                                            .text("")
+                                                        d3.select("#infomkt")
+                                                            .html("El análisis de datos se presenta como una herramienta para la <b style='color:#ffffff;'>toma de desiciones</b> sin embargo la socialización puede ser en si misma un fin, como podría ser una rendicion de cuentas anual.")
+                                                        d3.select("#infomkt").transition().style("color","#FFFF05").duration(1800);
+                                                        d3.select("#titulosinfomkt")
+                                                            .style("color","#0029FA")
+                                                    }
+                                                    </script>
+                                                    </button>
                                     </a>
 
                                     <a>
                                         <button onclick="infoweb()" style="border: none; color: transparent; background: none!important;">
-                    <h3 style= "background-color: #FFFF05;"><pre id=titulosinfoweb style= "color: #0c0c0c; flex-grow:1;"><b> Web </b></pre></h3>
-                  <script>
-                    function infoweb() {
-                      d3.select("#todoxcuanti")
-                        .text("")
-                      d3.select("#infoweb")
-                        .html("La revolución digital toma de sorpresa a las empresas e instituciones tradicionales con nuevos modelos de gobierno y de consumo, acortando la brecha entre los que han sabido <b style='color:#ffffff;'>adaptarse</b> a las necesidades actuales, más aún con una pandemia que nos permitió dejar el confort y plantearnos transformalo todo.")
-                      d3.select("#infoweb").transition().style("color","#FFFF05").duration(1000);
-                      d3.select("#titulosinfoweb")
-                        .style("color","#0029FA")
-                    }
-                  </script>
-                  </button>
+                                                    <h3 style= "background-color: #FFFF05;"><pre id=titulosinfoweb style= "color: #0c0c0c; flex-grow:1;"><b> Web </b></pre></h3>
+                                                    <script>
+                                                    function infoweb() {
+                                                        d3.select("#todoxcuanti")
+                                                            .text("")
+                                                        d3.select("#infoweb")
+                                                            .html("La revolución digital toma de sorpresa a las empresas e instituciones tradicionales con nuevos modelos de gobierno y de consumo, acortando la brecha entre los que han sabido <b style='color:#ffffff;'>adaptarse</b> a las necesidades actuales, más aún con una pandemia que nos permitió dejar el confort y plantearnos transformalo todo.")
+                                                        d3.select("#infoweb").transition().style("color","#FFFF05").duration(1000);
+                                                        d3.select("#titulosinfoweb")
+                                                            .style("color","#0029FA")
+                                                    }
+                                                    </script>
+                                                    </button>
                                     </a>
 
                                 </div>
@@ -464,7 +371,6 @@
                         </li>
                         <li class="l-section section">
                             <div class="hire">
-                                <!-- checkout formspree.io for easy form setup -->
                                 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                                 <script type="text/javascript">
                                     $(document).ready(function() {
@@ -497,20 +403,6 @@
                                 <body>
                                     <h2></h2>
                                     <div class="container" align="center"> <embed src="CV_PEDRO_PRIETO.pdf" type="application/pdf" width="100%" height="100%" />
-                                        <!--br>
-    <br>
-    <h2>Registra tus datos!</h2>
-    </br>
-    <form id="newsletter" action="https://v2-api.sheety.co/b0d4071fe3be0cc56ffeee11ad0a5b21/regOpc" style="color:indigo;">
-      <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-      <input type="email" id="email" name="email" placeholder="pedro@pprieto.com" required>
-      <input type="text" id="interes" name="interés"placeholder="Ejemplo: análisis de base de datos" required>
-      <input type="submit" value="Enviar">
-    </form>
-    <div id="newsletter-success" style="display: none;">
-      Recibido! pronto estaremos en contacto!
-    </div-->
-
                                     </div>
                             </div>
                         </li>
@@ -520,10 +412,9 @@
         </div>
         <ul class="outer-nav">
             <li class="is-active">01. Inicio</li>
-            <li>02. Ámbitos</li>
-            <li>03. Acerca</li>
+            <li>02. Bloc</li>
+            <li>03. Galería</li>
             <li>04. Contacto</li>
-            <!--li>Sobre mi</li-->
         </ul>
 
     </div>
@@ -535,8 +426,5 @@
     <script src="assets/js/functions-min.js"></script>
 
     </body>
-
-</html>
-</body>
 
 </html>
