@@ -31,87 +31,59 @@
     <meta name="keywords" content="Marketing, Datos, Web, Geo, Informática">
     <meta name="author" content="Pedro Prieto">
     <link rel="stylesheet" href="assets/css/main.css">
-
-    <!---->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!--script src= "assets/js/pixi.min.js"></script-->
     <script src="assets/js/d3.min.js"></script>
     <script src="assets/js/paper-full.js"></script>
-
-    <!--script type="text/javascript" src="assets/js/paper-full.js"></script-->
-
-
-
 </head>
 
-
 <body>
-
     <div class="device-notification">
         <a class="device-notification--logo" href="#0">
-            <!--p></p-->
             <img src="assets/img/logo.png" alt="Pedro Prieto">
-
         </a>
         <p class="device-notification--message">Bienvenido, estamos escribiendo oportunidades. </br><i>Te recomiendo usar una computadora.</i></p>
     </div>
-
     <div class="perspective effect-rotate-left">
         <div class="container">
             <div class="outer-nav--return"></div>
             <div id="viewport" class="l-viewport">
-
                 <div class="l-wrapper">
-
                     <header class="header">
-
-                        <!--p>PPrieto</p-->
-                        <a class="header--logo" href="index.html">
-                            <pre>PPrieto</pre>
-                            <img src="assets/img/logo.png" alt="Pedro Prieto">
+                        <a class="header--logo" style="position:relative; top:13%; left:-2.1%;" href="index.html">
+                            <img src="assets/img/logo.png" alt="Pedro Prieto"><pre> PPrieto</pre>
                         </a>
-                        <button class="header--cta cta" style="position:relative; top:20%; left:43%;">En acción</button>
+                        <button class="header--cta cta" style="position:relative; top:20%; left:43%;">Contacto</button>
                         <div class="header--nav-toggle">
                             <span></span>
                         </div>
                     </header>
-
-
                     <nav class="l-side-nav">
-
                         <ul class="side-nav">
-
                             <li class="is-active"><span>Inicio</span></li>
                             <li><span>Bloc</span></li>
                             <li><span>Galería</span></li>
-                            <li><span>Contacto</span></li>
                             <li><span>En acción</span></li>
+                            <li><span>Contacto</span></li>
                         </ul>
                     </nav>
-
                     <ul class="l-main-content main-content">
                         <li class="l-section section section--is-active">
                             <div class="intro">
                                 <div class="intro--banner">
-
-                                    <!--iframe-->
                                     <iframe id=iframeinfo style="width: 100%; height: 90%; display: none; border:none" title="Ejemplos" src=""></iframe>
-                                    <!--visibility: hidden; overflow: hidden; allowfullscreen="" scrolling="no"-->
                                     <h1 class="cabeceraprin" id=tituloNCD>Datos en <br>Experiencias<br>Visuales.</h1>
-                                    <button id=masInfo class="cta">Más información
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                  <span class="btn-background"></span>
-                </button>
+                                    <button id=masInfo class="cta">Ponerse en contacto
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                                        <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                                            <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                                        </g></svg>
+                                        <span class="btn-background"></span>
+                                    </button>
+
                                     <img id="astronauta" src="assets/img/introduction-visual.png">
                                 </div>
                                 <div class="intro--options">
-
                                     <script>
                                         let cabecera = d3.select("#tituloNCD")
                                         console.log(cabecera.node())
@@ -119,23 +91,15 @@
                                         console.log(h1s.node())
                                         let cabeceran1 = d3.select(".cabeceraprin")
                                         console.log(cabeceran1.nodes())
-                                            //<cabecera.text("")>
-                                            //otras formas
                                         d3.select("#masInfo")
-
-
                                         let mouseCursor = document.querySelector(".cursor");
                                         let navLinks = document.querySelectorAll(".nav-links li")
-
-                                        // falta conseguir el .cursor y el nav-links relativo en la pagina en side-nav
                                     </script>
 
                                     <div class="col-lg-6 col-sm-12 col-md-12 form-card">
                                         <button onclick="geo()" class="col-lg-6 col-sm-12 col-md-12 form-card">
-                  <!--a href="geo/index.html"-->
                     <h3 style= "background-color: #E6F4F1; color: #0E6F73;">Sobre mi</h3>
                     <p id="pgeo" style= "color: #FF8946; flex-grow:1;">60% de las oportunidades son geográficas.</p>
-                  <!--/a-->
                   <script>
                     function geo() {
                       d3.select("#tituloNCD")
@@ -151,24 +115,14 @@
                         .style("color", "#ffffff")
                         .text("Predicciones, ventas, servicios, rutas, etc.")
                       d3.select("#pgeo").transition().style("color","rgb(128,128,128)").duration(1000);
-                      //d3.select
-                      //#ffffff #9007f9 #0c0c0c #FF8946
-                        //"; overflow: hidden; border:none")
                     }
                   </script>
                   </button>
                                     </div>
-
-
-
                                     <div class="col-lg-6 col-sm-12 col-md-12 form-card">
-
                                         <button onclick="webmkt()" class="col-lg-6 col-sm-12 col-md-12 form-card">
-                  
-                <!--a href="#0"-->
-                  <h3 style= "background-color: #E6F4F1; color: #0E6F73;">Historias en Números</h3>
+                                    <h3 style= "background-color: #E6F4F1; color: #0E6F73;">Historias en Números</h3>
                   <p id="pwebmkt" style= "color: #FF8946; flex-grow:1;">80% de la información obtiene valor en el Marketing.</p>
-                <!--/a-->
                 <script>
                   function webmkt() {
                     d3.select("#tituloNCD")
@@ -178,13 +132,11 @@
                     d3.select("#astronauta")
                       .attr("src", "")
                     d3.select("#iframeinfo")
-                      .attr("src", "DASHBOARD/index.html") //
+                      .attr("src", "DASHBOARD/index.html")
                       .style("display", "flex")
-
                     d3.select("#pwebmkt")
                       .style("color", "#ffffff")
                       .text("Dashboards, estadística, IA, matrices, etc. Ver más en galería.")
-
                     d3.select("#pwebmkt").transition().style("color","rgb(128,128,128)").duration(1000);
                   }
                 </script>
@@ -194,10 +146,8 @@
                                     <div class="col-lg-6 col-sm-12 col-md-12 form-card">
 
                                         <button onclick="infoWeb()">
-                <!--a href="DASHBOARD/index.html"-->
-                  <h3 style= "background-color: #E6F4F1; color: #0E6F73;">Servicios</h3>
+                  <h3 style= "background-color: #E6F4F1; color: #0E6F73;">Mis especialidades</h3>
                   <p id="pinfoWeb" style= "color: #FF8946; flex-grow:1;">100% páginas dinámicas, en código y económicas. &#127776;</p>
-                <!--/a-->
                 </button>
                                     </div>
                                     <script>
@@ -211,27 +161,16 @@
                                             d3.select("#iframeinfo")
                                                 .attr("src", "webm/index.html")
                                                 .style("display", "flex")
-
                                             d3.select("#pinfoWeb")
                                                 .text("Desarrollo fullstack con JavaScript o Wordpress.")
                                                 .style("color", "#ffffff")
                                             d3.select("#pinfoWeb").transition().style("color", "rgb(128,128,128)").duration(1000);
-                                            //d3.select
-                                            //#ffffff #9007f9 #0c0c0c #FF8946
-                                            //"; overflow: hidden; border:none")
                                         }
                                     </script>
                                 </div>
-
-
                                 <p id="flecha" style="color: #282828;">▼</p>
-
-
-
                             </div>
                         </li>
-
-
                         <li class="l-section section">
                             <div class="work">
                                 <h2>Bloc</h2>
@@ -289,7 +228,7 @@
                         <li class="l-section section">
                             <div class="about">
                                 <div class="about--banner">
-                                    <h2 id=todoxcuanti><br>Todo<br>por<br>cuantificar</h2>
+                                    <h2 id=todoxcuanti><br>Explorando un <br>mundo <br>de datos.</h2>
                                     <p id=infogeo style="text-align: justify;"></p>
                                     <p id=infomkt style="text-align: justify;"></p>
                                     <p id=infoweb style="text-align: justify;"></p>
@@ -311,7 +250,6 @@
                                                     </script>
                                                     </button>
                                     </a>
-
                                     <a>
                                         <button onclick="infomkt()" style="border: none; color: transparent; background: none!important;">
                                                     <h3 style= "background-color: #FFFF05;"><pre id=titulosinfomkt style= "color: #0c0c0c; flex-grow:1;"><b> Marketing &amp; Datos </b></pre></h3>
@@ -328,7 +266,6 @@
                                                     </script>
                                                     </button>
                                     </a>
-
                                     <a>
                                         <button onclick="infoweb()" style="border: none; color: transparent; background: none!important;">
                                                     <h3 style= "background-color: #FFFF05;"><pre id=titulosinfoweb style= "color: #0c0c0c; flex-grow:1;"><b> Web </b></pre></h3>
@@ -345,28 +282,8 @@
                                                     </script>
                                                     </button>
                                     </a>
-
                                 </div>
                                 <p id="flecha" style="color: #282828;">▼</p>
-                            </div>
-                        </li>
-
-                        <li class="l-section section">
-                            <div class="contact">
-                                <div class="contact--lockup">
-                                    <div class="modal">
-                                        <div class="modal--information">
-                                            <p>Padre Aguirre 14-31 y Pio Bravo, Cuenca - Ecuador</p>
-                                            <a href="mailto:pedro@pprieto.com">pedro@pprieto.com</a>
-                                            <a href="tel:+593998072112">09 980 72 112</a>
-                                        </div>
-                                        <ul class="modal--options">
-                                            <li><a href="https://www.facebook.com/PPRIETO-106586587504561">facebook</a></li>
-                                            <li><a href="mailto:pedro@pprieto.com">Escribir</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
                             </div>
                         </li>
                         <li class="l-section section">
@@ -406,6 +323,25 @@
                                     </div>
                             </div>
                         </li>
+
+                        <li class="l-section section">
+                            <div class="contact">
+                                <div class="contact--lockup">
+                                    <div class="modal">
+                                        <div class="modal--information">
+                                            <p>Padre Aguirre 14-31 y Pio Bravo, Cuenca - Ecuador</p>
+                                            <a href="mailto:pedro@pprieto.com">pedro@pprieto.com</a>
+                                            <a href="tel:+593998072112">09 980 72 112</a>
+                                        </div>
+                                        <ul class="modal--options">
+                                            <li><a href="https://www.facebook.com/PPRIETO-106586587504561">facebook</a></li>
+                                            <li><a href="mailto:pedro@pprieto.com">Escribir</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -414,7 +350,7 @@
             <li class="is-active">01. Inicio</li>
             <li>02. Bloc</li>
             <li>03. Galería</li>
-            <li>04. Contacto</li>
+            <li>04. En acción</li>
         </ul>
 
     </div>
@@ -424,7 +360,6 @@
         window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')
     </script>
     <script src="assets/js/functions-min.js"></script>
-
     </body>
 
 </html>
