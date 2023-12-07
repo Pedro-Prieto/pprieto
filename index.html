@@ -99,9 +99,11 @@
                                     <div class="col-lg-6 col-sm-12 col-md-12 form-card">
                                         <button onclick="geo()" class="col-lg-6 col-sm-12 col-md-12 form-card">
                     <h3 style= "background-color: #E6F4F1; color: #0E6F73;">Sobre mi</h3>
-                    <p id="pgeo" style= "color: #FF8946; flex-grow:1;">60% de las oportunidades son geográficas.</p>
+
+                    
+                    <p id="pinfo" style= "color: #FF8946; flex-grow:1;">Analisis de datos <br>Data viz / BI / BA / DS</p>
                   <script>
-                    function geo() {
+                    function info() {
                       d3.select("#tituloNCD")
                         .text("")
                       d3.select("#masInfo")
@@ -109,67 +111,90 @@
                       d3.select("#astronauta")
                         .attr("src", "")
                       d3.select("#iframeinfo")
-                        .attr("src", "geo/index.html")
+                        .attr("src", "sobremi/sm.html")
                         .style("display", "flex")
-                      d3.select("#pgeo")
+                      d3.select("#pinfo")
                         .style("color", "#ffffff")
-                        .text("Predicciones, ventas, servicios, rutas, etc.")
-                      d3.select("#pgeo").transition().style("color","rgb(128,128,128)").duration(1000);
+                        .text("Transformando Información en Estrategias Visuales Impactantes")
+                      d3.select("#pinfo").transition().style("color","rgb(128,128,128)").duration(1000);
                     }
                   </script>
                   </button>
                                     </div>
+
+                                    <div class="col-lg-6 col-sm-12 col-md-12 form-card">
+                                        <button onclick="info()" class="col-lg-6 col-sm-12 col-md-12 form-card">
+                                            <h3 style="background-color: #E6F4F1; color: #0E6F73;">Sobre mi</h3>
+                                            <p id="pgeo" style="color: #FF8946; flex-grow:1;">Analisis de datos <br>Data viz / BI / BA / DS</p>
+                                            <script>
+                                                function geo() {
+                                                    d3.select("#tituloNCD")
+                                                        .text("")
+                                                    d3.select("#masInfo")
+                                                        .text("")
+                                                    d3.select("#astronauta")
+                                                        .attr("src", "")
+                                                    d3.select("#iframeinfo")
+                                                        .attr("src", "geo/index.html")
+                                                        .style("display", "flex")
+                                                    d3.select("#pgeo")
+                                                        .style("color", "#ffffff")
+                                                        .text("Transformando Información en Estrategias Visuales Impactantes")
+                                                    d3.select("#pgeo").transition().style("color", "rgb(128,128,128)").duration(1000);
+                                                }
+                                            </script>
+                                        </button>
+                                    </div>
+
                                     <div class="col-lg-6 col-sm-12 col-md-12 form-card">
                                         <button onclick="webmkt()" class="col-lg-6 col-sm-12 col-md-12 form-card">
-                                    <h3 style= "background-color: #E6F4F1; color: #0E6F73;">Historias en Números</h3>
-                  <p id="pwebmkt" style= "color: #FF8946; flex-grow:1;">80% de la información obtiene valor en el Marketing.</p>
-                <script>
-                  function webmkt() {
-                    d3.select("#tituloNCD")
-                      .text("")
-                    d3.select("#masInfo")
-                      .text("")
-                    d3.select("#astronauta")
-                      .attr("src", "")
-                    d3.select("#iframeinfo")
-                      .attr("src", "DASHBOARD/index.html")
-                      .style("display", "flex")
-                    d3.select("#pwebmkt")
-                      .style("color", "#ffffff")
-                      .text("Dashboards, estadística, IA, matrices, etc. Ver más en galería.")
-                    d3.select("#pwebmkt").transition().style("color","rgb(128,128,128)").duration(1000);
-                  }
-                </script>
-                </button>
+                                            <h3 style="background-color: #E6F4F1; color: #0E6F73;">Historias en Números</h3>
+                                            <p id="pwebmkt" style="color: #FF8946; flex-grow:1;">80% de la información obtiene valor en el Marketing.</p>
+                                            <script>
+                                                function webmkt() {
+                                                    d3.select("#tituloNCD")
+                                                        .text("")
+                                                    d3.select("#masInfo")
+                                                        .text("")
+                                                    d3.select("#astronauta")
+                                                        .attr("src", "")
+                                                    d3.select("#iframeinfo")
+                                                        .attr("src", "DASHBOARD/index.html")
+                                                        .style("display", "flex")
+                                                    d3.select("#pwebmkt")
+                                                        .style("color", "#ffffff")
+                                                        .text("Dashboards, estadística, IA, matrices, etc. Ver más en galería.")
+                                                    d3.select("#pwebmkt").transition().style("color", "rgb(128,128,128)").duration(1000);
+                                                }
+                                            </script>
+                                        </button>
                                     </div>
 
                                     <div class="col-lg-6 col-sm-12 col-md-12 form-card">
-
                                         <button onclick="infoWeb()">
-                  <h3 style= "background-color: #E6F4F1; color: #0E6F73;">Mis especialidades</h3>
-                  <p id="pinfoWeb" style= "color: #FF8946; flex-grow:1;">100% páginas dinámicas, en código y económicas. &#127776;</p>
-                </button>
+                                            <h3 style="background-color: #E6F4F1; color: #0E6F73;">Mis especialidades</h3>
+                                            <p id="pinfoWeb" style="color: #FF8946; flex-grow:1;">100% páginas dinámicas, en código y económicas. &#127776;</p>
+                                        </button>
+                                        <script>
+                                            function infoWeb() {
+                                                d3.select("#tituloNCD")
+                                                    .text("")
+                                                d3.select("#masInfo")
+                                                    .text("")
+                                                d3.select("#astronauta")
+                                                    .attr("src", "")
+                                                d3.select("#iframeinfo")
+                                                    .attr("src", "webm/index.html")
+                                                    .style("display", "flex")
+                                                d3.select("#pinfoWeb")
+                                                    .text("Desarrollo fullstack con JavaScript o Wordpress.")
+                                                    .style("color", "#ffffff")
+                                                d3.select("#pinfoWeb").transition().style("color", "rgb(128,128,128)").duration(1000);
+                                            }
+                                        </script>
                                     </div>
-                                    <script>
-                                        function infoWeb() {
-                                            d3.select("#tituloNCD")
-                                                .text("")
-                                            d3.select("#masInfo")
-                                                .text("")
-                                            d3.select("#astronauta")
-                                                .attr("src", "")
-                                            d3.select("#iframeinfo")
-                                                .attr("src", "webm/index.html")
-                                                .style("display", "flex")
-                                            d3.select("#pinfoWeb")
-                                                .text("Desarrollo fullstack con JavaScript o Wordpress.")
-                                                .style("color", "#ffffff")
-                                            d3.select("#pinfoWeb").transition().style("color", "rgb(128,128,128)").duration(1000);
-                                        }
-                                    </script>
+                                    <p id="flecha" style="color: #282828;">▼</p>
                                 </div>
-                                <p id="flecha" style="color: #282828;">▼</p>
-                            </div>
                         </li>
                         <li class="l-section section">
                             <div class="work">
@@ -343,23 +368,23 @@
                         </li>
 
                     </ul>
+                    </div>
                 </div>
             </div>
+            <ul class="outer-nav">
+                <li class="is-active">01. Inicio</li>
+                <li>02. Bloc</li>
+                <li>03. Galería</li>
+                <li>04. En acción</li>
+            </ul>
+
         </div>
-        <ul class="outer-nav">
-            <li class="is-active">01. Inicio</li>
-            <li>02. Bloc</li>
-            <li>03. Galería</li>
-            <li>04. En acción</li>
-        </ul>
 
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')
-    </script>
-    <script src="assets/js/functions-min.js"></script>
-    </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')
+        </script>
+        <script src="assets/js/functions-min.js"></script>
+        </body>
 
 </html>

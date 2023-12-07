@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sección de Contenido de Texto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: auto;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            cursor: pointer;
+            color: #0E6F73;
+        }
+        
+        .highlight {
+            color: #FF8946;
+        }
+    </style>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const paragraph = d3.select("p");
+            const words = paragraph.text().split(" ");
+
+            paragraph.html("");
+
+            words.forEach(function(word) {
+                const span = paragraph.append("span")
+                    .text(word + " ")
+                    .on("mouseover", function() {
+                        d3.select(this).classed("highlight", true);
+                    })
+                    .on("mouseout", function() {
+                        d3.select(this).classed("highlight", false);
+
+                    });
+            });
+        });
+    </script>
+
+    <body>
+        <div class="container">
+            <h1>Un analista de datos</h1>
+            <p>Me identifico como un Analista de Datos, enfocado en la convergencia de la visualización de datos, la ciencia de datos y el análisis de negocios. Mi trayectoria abarca desde la interpretación de datos complejos hasta la creación de bellas
+                narrativas visuales. Actualmente desempeño el rol de Analista de Business Intelligence en Bi Solutions, donde mi misión consiste en traducir datos en historias visuales significativas. Mi destreza con herramientas como Tableau, Power BI
+                y GIS/ArcGIS no se limita a la representación gráfica. En el núcleo de mi experiencia reside la habilidad para descifrar datos y convertirlos en insights para el negocio. He participado en la transformación de datos en conocimiento, permitiendo
+                a las organizaciones tomar decisiones informadas. Mi objetivo es seguir evolucionando, explorando nuevas técnicas de visualización y capitalizando tendencias en ciencia de datos. La integración de tecnologías emergentes, como la IA y el
+                machine learning, para la toma de decisiones basada en datos. Me comprometo a continuar construyendo puentes entre los datos y las decisiones estratégicas, en el camino hacia una comprensión más efectiva de la información.</p>
+        </div>
+    </body>
+
+</html>
