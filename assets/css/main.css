@@ -33,6 +33,18 @@
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    mix-blend-mode: difference;
+    /* Invertir colores */
+}
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -182,7 +194,7 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
     -webkit-appearance: button;
-    cursor: help
+    cursor: default;
 }
 
 button[disabled],
@@ -1404,7 +1416,7 @@ body {
 }
 
 .contact--lockup .modal--options li:nth-child(1) {
-    background-color: #0029FA
+    background-color: #F2C811
 }
 
 .contact--lockup .modal--options li:nth-child(2) {

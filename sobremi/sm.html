@@ -37,26 +37,46 @@
         }
     </style>
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const paragraph = d3.select("p");
-            const words = paragraph.text().split(" ");
+    <!DOCTYPE html>
+    <html>
 
-            paragraph.html("");
-
-            words.forEach(function(word) {
-                const span = paragraph.append("span")
-                    .text(word + " ")
-                    .on("mouseover", function() {
-                        d3.select(this).classed("highlight", true);
-                    })
-                    .on("mouseout", function() {
-                        d3.select(this).classed("highlight", false);
-
-                    });
-            });
-        });
-    </script>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sección de Contenido de Texto</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #0c0c0c;
+                margin: 0;
+                padding: 20px;
+            }
+            
+            .container {
+                max-width: auto;
+                margin: 0 auto;
+                background-color: #E6F4F1;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            
+            h1 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            
+            p {
+                font-size: 16px;
+                line-height: 1.5;
+                cursor: pointer;
+                color: #0E6F73;
+            }
+            
+            .highlight {
+                color: #FF8946;
+            }
+        </style>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+    </head>
 
     <body>
         <div class="container">
@@ -67,6 +87,31 @@
                 a las organizaciones tomar decisiones informadas. Mi objetivo es seguir evolucionando, explorando nuevas técnicas de visualización y capitalizando tendencias en ciencia de datos. La integración de tecnologías emergentes, como la IA y el
                 machine learning, para la toma de decisiones basada en datos. Me comprometo a continuar construyendo puentes entre los datos y las decisiones estratégicas, en el camino hacia una comprensión más efectiva de la información.</p>
         </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const paragraph = d3.select("p");
+                const words = paragraph.text().split(" ");
+
+                paragraph.html("");
+
+                words.forEach(function(word) {
+                    const span = paragraph.append("span")
+                        .text(word + " ")
+                        .on("mouseover", function() {
+                            const highlightedWords = ["Analista", "Datos,", "datos,", "visualización", "ciencia", "datos", "análisis", "negocios", "business", "intelligence", "visuales", "tableau", "power", "bi", "insights", "IA", "Machine", "learning", "decisiones", "información"];
+                            if (highlightedWords.includes(word)) {
+                                d3.select(this).classed("highlight", true);
+                            }
+                        })
+                        .on("mouseout", function() {
+                            d3.select(this).classed("highlight", false);
+                        });
+                });
+            });
+        </script>
     </body>
+
+    </html>
 
 </html>
