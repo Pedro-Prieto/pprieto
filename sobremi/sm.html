@@ -10,6 +10,7 @@
             background-color: #0c0c0c;
             margin: 0;
             padding: 20px;
+            position: relative;
         }
         
         .container {
@@ -18,6 +19,19 @@
             background-color: #E6F4F1;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .container::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(45deg, rgba(14, 111, 115, 0.25) 0%, rgba(230, 244, 241, 0.5) 25%, rgba(242, 200, 17, 0.20) 50%, rgba(255, 137, 70, 0.15) 90%);
+            z-index: -1;
         }
         
         h1 {
@@ -31,10 +45,6 @@
             cursor: pointer;
             color: #0E6F73;
         }
-        
-        .highlight {
-            color: #FF8946;
-        }
     </style>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <!DOCTYPE html>
@@ -42,7 +52,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Sección de Contenido de Texto</title>
+        <title>Sobre mi</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -72,7 +82,8 @@
             }
             
             .highlight {
-                color: #FF8946;
+                color: #0E6F73;
+                font-weight: bold;
             }
         </style>
         <script src="https://d3js.org/d3.v7.min.js"></script>
@@ -80,8 +91,8 @@
 
     <body>
         <div class="container">
-            <h1 style="Color: #FF8946">Un analista de datos</h1>
-            <p>Me identifico como un Analista de Datos, enfocado en la convergencia de la visualización de datos, la ciencia de datos y el análisis de negocios. Mi trayectoria abarca desde la interpretación de datos complejos hasta la creación de bellas
+            <h1 style="Color: #0E6F73">En general, un analista de datos</h1>
+            <p>Soy un Analista de Datos, sin embargo, estoy enfocado en la convergencia de la visualización de datos, la ciencia de datos y el análisis de negocios. Mi trayectoria abarca desde la interpretación de datos complejos hasta la creación de bellas
                 narrativas visuales. Actualmente desempeño el rol de Analista de Business Intelligence en Bi Solutions, donde mi misión consiste en traducir datos en historias visuales significativas. Mi destreza con herramientas como Tableau, Power BI
                 y GIS/ArcGIS no se limita a la representación gráfica. En el núcleo de mi experiencia reside la habilidad para descifrar datos y convertirlos en insights para el negocio. He participado en la transformación de datos en conocimiento, permitiendo
                 a las organizaciones tomar decisiones informadas. Mi objetivo es seguir evolucionando, explorando nuevas técnicas de visualización y capitalizando tendencias en ciencia de datos. La integración de tecnologías emergentes, como la IA y el
@@ -99,7 +110,7 @@
                     const span = paragraph.append("span")
                         .text(word + " ")
                         .on("mouseover", function() {
-                            const highlightedWords = ["Analista", "Datos,", "datos,", "visualización", "ciencia", "datos", "análisis", "negocios", "business", "intelligence", "visuales", "tableau", "power", "bi", "insights", "IA", "Machine", "learning", "decisiones", "información"];
+                            const highlightedWords = ["Analista", "Datos,", "datos,", "visualización", "ciencia", "datos", "análisis", "negocios", "business", "intelligence", "visuales", "tableau", "power", "bi", "insights", "IA", "Machine", "learning", "decisiones", "información", "estratégicas", "conocimiento"];
                             if (highlightedWords.includes(word)) {
                                 d3.select(this).classed("highlight", true);
                             }
