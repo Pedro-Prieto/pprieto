@@ -1,322 +1,256 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function(m, e, t, r, i, k, a) {
-            m[i] = m[i] || function() {
-                (m[i].a = m[i].a || []).push(arguments)
-            };
-            m[i].l = 1 * new Date();
-            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-        })
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-        ym(56860261, "init", {
-            clickmap: true,
-            trackLinks: true,
-            accurateTrackBounce: true,
-            webvisor: true
-        });
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/56860261" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-    <title>Pedro Prieto</title>
-    <link rel="icon" type="image/png" href="favicon.png"></link>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Análisis de datos">
-    <meta name="keywords" content="Marketing, Datos, Web, Geo, Informática">
-    <meta name="author" content="Pedro Prieto">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="assets/js/d3.min.js"></script>
-    <script src="assets/js/paper-full.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Prieto - Analista de Datos</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
 
 </head>
-
 <body>
-    <div class="device-notification">
-        <a class="device-notification--logo" href="#0">
-            <img src="assets/img/logo.png" alt="Pedro Prieto">
-        </a>
-        <p class="device-notification--message">Bienvenido, estamos escribiendo oportunidades. </br><i>Te recomiendo usar una computadora.</i></p>
-    </div>
-    <div class="perspective effect-rotate-left">
+    <header>
         <div class="container">
-            <div class="outer-nav--return"></div>
-            <div id="viewport" class="l-viewport">
-                <div class="l-wrapper">
-                    <header class="header">
-                        <a class="header--logo" style="position:relative; top:13%; left:-2.1%;" href="index.html">
-                            <img src="assets/img/logo.png" alt="Pedro Prieto"><pre> PPrieto</pre>
-                        </a>
-                        <button class="header--cta cta" style="position:relative; top:20%; left:43%;">Bloc</button>
-                        <div class="header--nav-toggle">
-                            <span></span>
-                        </div>
-                    </header>
-                    <nav class="l-side-nav">
-                        <ul class="side-nav">
-                            <li class="is-active"><span>⛺</span></li>
-                            <!--li><span>Portafolio</span></li-->
-                            <!--li><span>Contacto</span></li-->
-                            <!--li><span>Bloc</span></li-->
-                        </ul>
-                    </nav>
-                    <ul class="l-main-content main-content">
-                        <li class="l-section section section--is-active">
-                            <!-- FILEPATH: /C:/Users/Pedro/Documents/GitHub/pprieto/index.html -->
-                            <!-- BEGIN: ed8c6549bwf9 -->
-                            <div style="display: flex; justify-content: center; align-items: flex-start; width: 50%">
-                                <p style="text-align: center;">Sitio en construcción 👷‍♂️🏗️</p>
-                            </div>
-                            <!-- END: ed8c6549bwf9 -->
-                            <div class="intro">
-                                <div class="intro--banner">
-                                    <iframe id=iframeinfo style="width: 100%; height: 90%; display: none; border:none" title="Ejemplos" src=""></iframe>
-                                    <h1 class="cabeceraprin" id=tituloNCD>Datos en <br>Experiencias<br>Visuales.</h1>
-                                    <button id=masInfo class="cta">Ver bloc
-                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                                        <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                                            <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                                        </g></svg>
-                                        <span class="btn-background"></span>
-                                    </button>
-
-                                    <img id="astronauta" src="assets/img/introduction-visual.png">
-                                </div>
-                                <div class="intro--options">
-                                    <script>
-                                        let cabecera = d3.select("#tituloNCD")
-                                        console.log(cabecera.node())
-                                        let h1s = d3.selectAll("h1")
-                                        console.log(h1s.node())
-                                        let cabeceran1 = d3.select(".cabeceraprin")
-                                        console.log(cabeceran1.nodes())
-                                        d3.select("#masInfo")
-                                        let mouseCursor = document.querySelector(".cursor");
-                                        let navLinks = document.querySelectorAll(".nav-links li")
-                                    </script>
-
-
-                                    <button onclick="info()" style="width: auto; height: auto; background: #0c0c0c; box-shadow: -8px -1px 10px rgba(228, 228, 228, 0.25), 3px 5px 8px rgba(0, 0, 0, 0.2), inset 3px 1px 10px rgba(166, 166, 166, 0.2), inset -3px -5px 20px rgba(255, 255, 255, 0.5); border-radius: 72.0954px; flex: none; order: 12; flex-grow: 0;">
-                                        <h3 style = "color: #0E6F73">Sobre mi</h3>
-                                        <!--p id="pinfo" style="color: #FF8946; flex-grow:1;"></p-->
-                                        <script>
-                                            function info() {
-                                                d3.select("#tituloNCD")
-                                                    .text("");
-                                                d3.select("#masInfo")
-                                                    .text("");
-                                                d3.select("#astronauta")
-                                                    .attr("src", "");
-                                                d3.select("#iframeinfo")
-                                                    .attr("src", "sobremi/sm.html")
-                                                    .style("display", "flex");
-                                                d3.select("#pinfo")
-                                                    .style("color", "#ffffff")
-                                                    .text("Transformando Información en Estrategias Visuales Impactantes");
-                                                d3.select("#pinfo").transition().style("color", "rgb(128,128,128)").duration(1000);
-                                            }
-                                        </script>
-                                    </button>
-
-                                    <button onclick="webmkt()" style="width: auto; height: auto; background: #0c0c0c; box-shadow: -8px -1px 10px rgba(228, 228, 228, 0.25), 3px 5px 8px rgba(0, 0, 0, 0.2), inset 3px 1px 10px rgba(166, 166, 166, 0.2), inset -3px -5px 20px rgba(255, 255, 255, 0.5); border-radius: 72.0954px; flex: none; order: 12; flex-grow: 0;">
-                                        <h3 style = "color: #0E6F73">Mis especialidades</h3>
-                                        <!--p id="pwebmkt" style="color: #FF8946; flex-grow:1;"></p-->
-                                        <script>
-                                            function webmkt() {
-                                                d3.select("#tituloNCD")
-                                                    .text("");
-                                                d3.select("#masInfo")
-                                                    .text("");
-                                                d3.select("#astronauta")
-                                                    .attr("src", "");
-                                                d3.select("#iframeinfo")
-                                                    .attr("src", "DASHBOARD/index.html")
-                                                    .style("display", "flex");
-                                                d3.select("#pwebmkt")
-                                                    .style("color", "#ffffff")
-                                                    .text("Dashboards, estadística, IA, matrices, etc. Ver más en galería.");
-                                                d3.select("#pwebmkt").transition().style("color", "rgb(128,128,128)").duration(1000);
-                                            }
-                                        </script>
-                                    </button>
-                                </div>
-                                <!--p id="flecha" style="color: #282828;">▼</p-->
+            <div class="header-content">
+                <div class="div-horizontal">
+                    <div>
+                        <img src="src/logo.png" alt="Logo" class="logo-img" style="height: 50px; width: 50px;">
+                    </div>
+                    <div class="logo"  onclick="scrollToTop()">
+                        <h1>Pedro Prieto</h1>
+                        <p>Business Analysis & Productos de datos</p>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre mí</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li>
+                            <button class="theme-toggle" onclick="toggleTheme()">
+                                <span id="theme-icon">🌙</span>
+                                <span id="theme-text">Oscuro</span>
+                            </button>
                         </li>
-                        <!--li class="l-section section">
-                            <div class="work">
-                                <h2>Portafolio</h2>
-                                <div class="work--lockup">
-                                    <ul class="slider">
-                                        <li class="slider--item slider--item-left">
-                                            <a href="#0">
-                                                <div class="slider--item-image">
-                                                    <img src="assets/img/geo.jpg" alt="Victory">
-                                                </div>
-                                                <p class="slider--item-title">Geo</p>
-                                                <p class="slider--item-description">Dimensionar información de todo tipo, con contenido intuitivo y oportuno para la toma de desiciones sobre distribución en general (ruteros, tiendas online, reuniones de directorios, etc.).</p>
-                                            </a>
-                                        </li>
-                                        <li class="slider--item slider--item-center">
-                                            <a href="#0">
-                                                <div class="slider--item-image">
-                                                    <img src="assets/img/mktydata.jpg" alt="Análisis de mercado">
-                                                </div>
-                                                <p class="slider--item-title">Datos &amp; Marketing</p>
-                                                <p class="slider--item-description">Generar una estrategia basada en resultados, realista y que permita un crecimiento sobre los indicadores.</p>
-                                            </a>
-                                        </li>
-
-                                        <li class="slider--item slider--item-right">
-                                            <a href="#0">
-                                                <div class="slider--item-image">
-                                                    <img src="assets/img/web.jpg" alt="1az">
-                                                </div>
-                                                <p class="slider--item-title">Web</p>
-                                                <p class="slider--item-description">Visibilizar la oferta de productos u servicios para usuarios y consumidores de manera dinámica, enfocado en sus necesidades informativas.</p>
-                                            </a>
-                                        </li>
-
-                                        <li class="slider--item slider--item-right">
-                                            <a href="#0">
-                                                <div class="slider--item-image">
-                                                    <img src="assets/img/web.jpg" alt="1az">
-                                                </div>
-                                                <p class="slider--item-title">Web</p>
-                                                <p class="slider--item-description">Visibilizar la oferta de productos u servicios para usuarios y consumidores de manera dinámica, enfocado en sus necesidades informativas.</p>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <script>
-                                        function ocultarSliderItems() {
-                                            var sliderItems = document.querySelectorAll('.slider--item');
-
-                                            if (sliderItems.length > 3) {
-                                                for (var i = 3; i < sliderItems.length; i++) {
-                                                    sliderItems[i].style.display = 'none';
-                                                }
-                                            }
-                                        }
-                                    </script>
-                                    <div class="slider--prev">
-                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                                                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                                                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                                                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                                                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                                                    </g>
-                                                    </svg>
-                                    </div>
-                                    <div class="slider--next">
-                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                                                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                                                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                                                    </g>
-                                                    </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </li-->
-
-                        <li class="l-section section">
-                            <div class="contact">
-                                <div class="contact--lockup">
-                                    <div class="modal">
-                                        <div class="modal--information">
-                                            <!--p>Padre Aguirre 14-31 y Pio Bravo, Cuenca - Ecuador</p-->
-                                            <a href="mailto:pedro@pprieto.com">pedro@pprieto.com</a>
-                                            <!--a href="tel:+593998072112">09 980 72 112</a-->
-                                        </div>
-                                        <ul class="modal--options">
-                                            <!--li><a href="https://www.facebook.com/PPRIETO-106586587504561">facebook</a></li-->
-                                            <li><a href="mailto:pedro@pprieto.com">Escribir</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="l-section section">
-                            <div class="about">
-                                <div class="about--banner">
-                                    <h2 id="todoxcuanti"><br>Explorando un <br>mundo <br>de datos.</h2>
-                                    <p id="infogeo" style="text-align: justify;"></p>
-                                    <p id="infomkt" style="text-align: justify;"></p>
-                                    <p id="infoweb" style="text-align: justify;"></p>
-                                </div>
-                                <div class="about--options">
-                                    <a>
-                                        <button onclick="infogeo()" style="border: none; color: transparent; background: none!important;">
-                                            <h3 style="background-color: #F2C811;"><pre id="titulosinfogeo" style="color: #0c0c0c; flex-grow:1;"><b> Geo </b><br>8/dic/23</pre></h3>
-                                        </button>
-                                    </a>
-                                    <a>
-                                        <button onclick="infomkt()" style="border: none; color: transparent; background: none!important;">
-                                            <h3 style="background-color: #F2C811;"><pre id="titulosinfomkt" style="color: #0c0c0c; flex-grow:1;"><b> Marketing &amp; Datos </b></pre></h3>
-                                        </button>
-                                    </a>
-                                    <a>
-                                        <button onclick="infoweb()" style="border: none; color: transparent; background: none!important;">
-                                            <h3 style="background-color: #F2C811;"><pre id="titulosinfoweb" style="color: #0c0c0c; flex-grow:1;"><b> Web </b></pre></h3>
-                                        </button>
-                                    </a>
-                                    <script>
-                                        function clearText() {
-                                            document.getElementById("todoxcuanti").innerText = "";
-                                            document.getElementById("infogeo").innerText = "";
-                                            document.getElementById("infomkt").innerText = "";
-                                            document.getElementById("infoweb").innerText = "";
-                                        }
-
-                                        function infogeo() {
-                                            clearText();
-                                            document.getElementById("infogeo").innerHTML = "El análisis geográfico a tomado un papel crucial en el siglo XXI debido a la interconexión y la capacidad de <b style='color:#ffffff;'>geolocalización</b> lo que significa una dimensión más a todos los análisis existentes hasta ahora.";
-                                            document.getElementById("infogeo").style.color = "#F2C811";
-                                            document.getElementById("titulosinfogeo").style.color = "#0029FA";
-                                        }
-
-                                        function infomkt() {
-                                            clearText();
-                                            document.getElementById("infomkt").innerHTML = "El análisis de datos se presenta como una herramienta para la <b style='color:#ffffff;'>toma de desiciones</b> sin embargo la socialización puede ser en si misma un fin, como podría ser una rendicion de cuentas anual.";
-                                            document.getElementById("infomkt").style.color = "#F2C811";
-                                            document.getElementById("titulosinfomkt").style.color = "#0029FA";
-                                        }
-
-                                        function infoweb() {
-                                            clearText();
-                                            document.getElementById("infoweb").innerHTML = "La revolución digital toma de sorpresa a las empresas e instituciones tradicionales con nuevos modelos de gobierno y de consumo, acortando la brecha entre los que han sabido <b style='color:#ffffff;'>adaptarse</b> a las necesidades actuales, más aún con una pandemia que nos permitió dejar el confort y plantearnos transformalo todo.";
-                                            document.getElementById("infoweb").style.color = "#F2C811";
-                                            document.getElementById("titulosinfoweb").style.color = "#0029FA";
-                                        }
-                                    </script>
-                                </div>
-                            </div>
-                        </li>
-
                     </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Transformando <span class="highlight">datos</span> en decisiones estratégicas</h2>
+                    <p>
+                        Especialista en análisis de datos con experiencia en Business Analysis y BI, 
+                        ayudando a empresas a descubrir insights valiosos para optimizar sus procesos de negocio.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#proyectos" class="cta-button primary">Ver Proyectos</a>
+                        <a href="#contacto" class="cta-button secondary">Contactar</a>
                     </div>
                 </div>
             </div>
-            <ul class="outer-nav">
-                <li class="is-active">Inicio</li>
-                <!--li>02. Portafolio</li-->
-                <li>Contacto</li>
-                <!--li>04. Bloc</li-->
-            </ul>
+        </section>
 
+        <!-- About Section -->
+        <section class="about fade-in" id="sobre-mi">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Sobre mí</h3>
+                        <p>
+                            Transformo datos complejos en interfaces visuales que impulsan decisiones. Utilizo herramientas como Power BI, Tableau y GIS para generar insights de alto impacto.
+                            Apasionado por la evolución constante, exploro nuevas técnicas de visualización y análisis para potenciar la toma de decisiones basada en datos.
+                        </p>
+                        <p>
+                            Con experiencia en múltiples industrias, me especializo en el desarrollo de soluciones de visualización de datos y optimización de procesos empresariales.
+                        </p>
+                    </div>
+                    <div class="skills-container">
+                        <h4 style="margin-bottom: 1.5rem; color: var(--text-primary); font-size: 1.3rem;">Habilidades Principales</h4>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-icon">🐍</span>
+                                <span class="skill-name">Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">📊</span>
+                                <span class="skill-name">SQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">⚡</span>
+                                <span class="skill-name">Power BI</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">📈</span>
+                                <span class="skill-name">Tableau</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">🌎</span>
+                                <span class="skill-name">SIG/GIS</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">☁️</span>
+                                <span class="skill-name">Ninja Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects fade-in" id="proyectos">
+            <div class="container">
+                <h2 class="section-title">Proyectos Demostrativos</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">🎯</div>
+                        <h3 class="project-title">Python: Análisis predictivo</h3>
+                        <p class="project-description">
+                            Modelo predictivo para segmentación de clientes basado en patrones de compra 
+                            y comportamiento digital.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Power BI</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">📊</div>
+                        <h3 class="project-title">SQL: Modelo de datos analítico</h3>
+                        <p class="project-description">
+                            Dashboard interactivo que centraliza métricas de ventas en tiempo real, 
+                            permitiendo análisis de tendencias y forecasting.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Malloy data</span>
+                            <span class="tag">SQLite</span>
+                        </div>
+                    </div>
+                    <div class="project-card"  id="openModalPBI">
+                        <div class="project-icon">⚡</div>
+                        <h3 class="project-title">Power BI: Análisis de Campañas</h3>
+                        <p class="project-description">
+                            Análisis de campañas de marketing que identificó segmentos de clientes 
+                            y optimizó la asignación de recursos.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Power BI</span>
+                            <span class="tag">Analytical</span>
+                            <span class="tag">Viewers</span>
+                        </div>
+                    </div>
+                                        <!-- Modal -->
+                    <div class="modal-overlay" id="modalPBI">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="texto-popup">Detalles del proyecto</h2>
+                                <span class="close-btn" id="closeModal-PBI">&times;</span>
+                            </div>
+                            <p> Este proyecto consiste en un dashboard con elementos visuales 100% nativos de Power BI, con indicadores que permiten 
+                                monitorear y tomar desiciones de una manera más informada sobre las campañas, costo y ganancia por canal.
+                            </p>
+                            <iframe title="Campaña de marketing" width="100%" height="350" src="https://app.powerbi.com/view?r=eyJrIjoiZjlhOGZkMzUtM2FiNy00ZjQ2LTkwZGItZTAxZjI0ODFhODIyIiwidCI6IjlhNTMwMWNkLTQwZDUtNGEyYi1hNjc3LTBhYjU0YTk3YWMyZiJ9" frameborder="0" allowFullScreen="true">
+                            </iframe>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card">
+                        <div class="project-icon">📈</div>
+                        <h3 class="project-title">Tableau: Análisis de Eficiencia Operacional</h3>
+                        <p class="project-description">
+                            Análisis de eficiencia operacional que identificó cuellos de botella 
+                            y oportunidades de mejora en la cadena de suministro.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Tableau</span>
+                            <span class="tag">Operaciones</span>
+                            <span class="tag">Business users</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" id="openModal">
+                        <div class="project-icon">🌎</div>
+                        <h3 class="project-title">GIS: Sistema de información</h3>
+                        <p class="project-description">
+                            Desarrollo de un sistema de información geográfica para la gestión de recursos naturales.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Arcgis</span>
+                            <span class="tag">QGIS</span>
+                            <span class="tag">Javascript</span>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal-overlay" id="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="texto-popup">Detalles del proyecto</h2>
+                                <span class="close-btn" id="closeModal">&times;</span>
+                            </div>
+                            <p> Este proyecto consiste en un sistema de información geográfica que permite 
+                                gestionar de forma eficiente los recursos naturales, optimizando la toma de decisiones.
+                            </p>
+                            <img src="src\mapa_base.png" 
+                            alt="Vista del proyecto" 
+                            style="max-width: 100%; border-radius: 8px; margin-top: 10px;">
+                        </div>
+                    </div>
+
+                    <!-- DBT -->
+                    <div class="project-card">
+                        <div class="project-icon">☁️</div>
+                        <h3 class="project-title">DBT: Transformación de Datos</h3>
+                        <p class="project-description">
+                            Implementación de DBT para la transformación y modelado de datos en un entorno de análisis avanzado.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">DBT</span>
+                            <span class="tag">DuckDB</span>
+                        </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact fade-in" id="contacto">
+            <div class="container">
+                <h3>¿Listo para transformar tus datos?</h3>
+                <p>Conectemos y exploremos cómo puedo ayudar a tu empresa a tomar mejores decisiones de datos.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <span>pedro@pprieto.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>💼</span>
+                        <a href="https://www.linkedin.com/in/pedroprietoba" target="_blank" style="color: #0E6F73;">LinkedIn</a>
+                    </div>
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <span>Cuenca, Ecuador</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pedro Prieto. Especialista en Análisis de Datos y Productos de Datos.</p>
         </div>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script>
-            window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')
-        </script>
-        <script src="assets/js/functions-min.js"></script>
-</body>
+    </footer>
 
 </html>
