@@ -110,12 +110,13 @@
             <div class="container">
                 <h2 class="section-title">Proyectos Demostrativos</h2>
                 <div class="projects-grid">
-                    <div class="project-card">
+
+                    <div class="project-card"   id="openModalPy">
                         <div class="project-icon">🎯</div>
                         <h3 class="project-title">Python: Análisis predictivo</h3>
                         <p class="project-description">
-                            Modelo predictivo para segmentación de clientes basado en patrones de compra 
-                            y comportamiento digital.
+                            Modelo de optimización de precios por segmentación de clientes, basado en patrones de compra
+                            y comportamiento de consumo.
                         </p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
@@ -123,6 +124,43 @@
                             <span class="tag">Power BI</span>
                         </div>
                     </div>
+                                                            <!-- Modal -->
+                        <div class="modal-overlay" id="modalPy">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="texto-popup">Detalles del proyecto</h2>
+                                    <span class="close-btn" id="closeModal-Py">&times;</span>
+                                </div>
+                                <p>Proyecto en python, con scikit-learn y visualizacion en streamlit, sobre elasticidad de precios en productos varios, que busca gestionar de forma eficiente los precios de acuerdo al tipo de producto y segmento de cliente.
+                                </p>
+                                
+                                <div class="image-stack" style="position: relative; max-width: 100%; margin-top: 10px;">
+                                    <!-- Imagen base -->
+                                    <img src="src/streamlit.png" 
+                                        alt="Dashboard" 
+                                        style="width: 100%; border-radius: 8px; display: block;">
+
+                                    <!-- Imagen overlay más pequeña -->
+                                    <img src="src/ROC.png" 
+                                        alt="ROC overlay" 
+                                        style="
+                                            position: absolute; 
+                                            top: 20px;      /* distancia desde arriba */
+                                            right: 20px;    /* distancia desde la derecha */
+                                            width: 30%;     /* tamaño más pequeño */
+                                            border-radius: 8px; 
+                                            box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+                                            pointer-events: none;
+                                        ">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
                     <div class="project-card">
                         <div class="project-icon">📊</div>
                         <h3 class="project-title">SQL: Modelo de datos analítico</h3>
@@ -140,8 +178,8 @@
                         <div class="project-icon">⚡</div>
                         <h3 class="project-title">Power BI: Análisis de Campañas</h3>
                         <p class="project-description">
-                            Análisis de campañas de marketing que identificó segmentos de clientes 
-                            y optimizó la asignación de recursos.
+                            Análisis de campañas de marketing con identificación de segmentos de clientes 
+                            y optimización de la asignación de recursos por canales de campañas.
                         </p>
                         <div class="project-tags">
                             <span class="tag">Power BI</span>

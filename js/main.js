@@ -123,3 +123,29 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+
+/*Py*/
+// Obtener elementos
+document.addEventListener("DOMContentLoaded", () => {
+    const openBtn = document.getElementById("openModalPy");
+    const modal = document.getElementById("modalPy");
+    const closeBtn = document.getElementById("closeModal-Py");
+
+    // abrir modal
+    openBtn.addEventListener("click", () => {
+        modal.classList.add("show");
+    });
+
+    // cerrar modal
+    closeBtn.addEventListener("click", () => {
+        modal.classList.remove("show");
+    });
+
+    // cerrar si se hace clic fuera del contenido
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.classList.remove("show");
+        }
+    });
+});
